@@ -1,5 +1,9 @@
-/* Base  */
+/* BASE */
 
+:root {
+  --color-body: #333333;
+  --background-body: #ffffff;
+}
 * {
   box-sizing: border-box;
 }
@@ -11,9 +15,10 @@ html {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.6rem;
-  color: #555555;
+  color: var(--color-body);
   margin: 0;
   line-height: 1.6;
+  background: var(--background-body);
 }
 
 h1,
@@ -21,7 +26,7 @@ h2,
 h3,
 h4 h5,
 h6 {
-  color: #333;
+  color: var(--color-body);
   font-family: "Poppins", sans-serif;
   line-height: 1;
 }
@@ -47,6 +52,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  padding-left: 2rem;
 }
 
 li {
@@ -95,9 +104,12 @@ li {
     margin: 0 auto;
     padding: 2rem;
   }
+  .grid__item {
+    max-width: 50%;
+  }
 }
 
-/* Sections */
+/* SECTIONS */
 
 section {
   padding: 5.5rem 0;
@@ -139,10 +151,10 @@ section {
 .header li {
   display: inline-flex;
   align-items: center;
-  padding: 0 0.5rem;
+  padding: 0 .5rem;
 }
 .header a {
-  color: #333;
+  color: var(--color-body);
 }
 
 a:hover {
@@ -181,7 +193,7 @@ a:hover {
   display: block;
   width: 22px;
   height: 3px;
-  background-color: #333;
+  background-color: var(--color-body);
 }
 
 .burger .bar::before,
@@ -190,18 +202,14 @@ a:hover {
   content: "";
   width: 22px;
   height: 3px;
-  background-color: #333;
+  background-color: var(--color-body);
   position: absolute;
 }
 .burger .bar::before {
-  top: 0;
   transform: translateY(-8px);
 }
 .burger .bar::after {
-  bottom: 0;
   transform: translateY(8px);
-}
-@media screen and (max-width: 749px) {
 }
 
 @media screen and (min-width: 750px) {
@@ -213,6 +221,7 @@ a:hover {
   }
 }
 
+/* HERO */
 .hero {
   background: #5b6c78;
   color: #fff;
@@ -223,6 +232,7 @@ a:hover {
   color: inherit;
   font-size: 4rem;
   margin: 1.6rem 0 0 0;
+  font-weight: 700;
 }
 
 .hero__item {
@@ -236,6 +246,14 @@ a:hover {
 .hero__item span {
   text-transform: uppercase;
 }
+.hero__item.left {
+  animation-duration: 1s;
+  animation-name: slideInleft;
+}
+.hero__item.right {
+  animation-duration: 1s;
+  animation-name: slideInright;
+}
 
 @media screen and (max-width: 749px) {
   .hero__item.left {
@@ -245,6 +263,7 @@ a:hover {
     order: 1;
   }
 }
+
 @media screen and (min-width: 750px) {
   .hero__item {
     flex: 1 0 50%;
@@ -254,16 +273,16 @@ a:hover {
   .hero__item.left {
     align-items: flex-start;
   }
+  .hero .title {
+    font-size: 5rem;
+  }
+  
+  .hero__avatar img {
+    border-radius: 50%;
+    max-width: 400px;
+  }
 }
 
-.hero .title {
-  font-size: 5rem;
-}
-
-.hero__avatar img {
-  border-radius: 50%;
-  max-width: 400px;
-}
 
 .about .section-title {
   margin-top: 2.8rem;
@@ -355,7 +374,7 @@ a:hover {
 }
 
 .portfolio-filters a {
-  color: #333;
+  color: var(--color-body);
   background-color: #eee;
   display: flex;
   flex: 1;
@@ -389,6 +408,8 @@ a:hover {
   background-color: #fff;
   text-transform: uppercase;
   position: relative;
+  box-shadow: 0 0 7px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
 }
 .card__inner {
   padding: 2rem;
@@ -418,9 +439,9 @@ a:hover {
   height: 100%;
 }
 
-
+/* FORM */
 .form {
-    max-width: 800px;
+    max-width: 600px;
     margin: 4rem auto 0 auto;
   }
 .form input, .form textarea{
@@ -436,7 +457,7 @@ a:hover {
 
   .form .btn {
     border: none;
-    background: #333;
+    background: var(--color-body);
     color: #fff;
     width: auto;
     min-width: 160px;
@@ -448,13 +469,80 @@ a:hover {
     background-color: #000;
   }
   
-  @media screen and (min-width: 750px) {
-      
-  }
+/* FOOTER */
+
+footer {
+  background-color: var(--color-body);
+  color: #eee;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .grid {
+  align-items: center;
+}
+
+footer .socials {
+  justify-content: center;
+  text-align: center;
+}
+footer .socials li {
+  padding: 0 .7rem;
+}
+footer .socials a {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  transition: all .4s;
+}
+
+footer .socials a:hover {
+  background-color: #fff;
+  color: var(--color-body);
+}
+
+@media screen and (min-width: 750px) {
+  
+}
+
 .toto {
   color: #555555;
 }
 
-@media screen and (min-width: 750px) {
 
+@media screen and (min-width: 750px) {
+  footer {
+    text-align: left;
+  }
 }
+footer .grid__item {
+  max-width: 33.3333%;
+}
+
+@keyframes slideinleft {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideinright {
+  from {
+    transform: translateX(110%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Components */
