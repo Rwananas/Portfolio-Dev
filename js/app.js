@@ -72,7 +72,65 @@ console.log(obj.title, obj.description);
 
 
 // LES BOUCLES, WHILE, FOR, FOREACH
+// for
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+};
 
-for (let i = 0; i < 5; i++) {
-    console.log('toto');
+//forEach
+array.forEach(i => {
+    console.log(i);
+});
+
+// FONCTIONS
+
+function myFunction() {
+    console.log('fonction simple');
 }
+// pour trigger la fonction, affiche le resultat 'ma fonction'
+myFunction();
+
+
+// -----------------------------------------------
+function myFunction2(i) {
+    console.log(i);
+}
+// Affiche 'autre fonction'
+myFunction2('autre fonction');
+
+// Affiche 'autre fonction modifiée'
+myFunction2('autre fonction modifiée');
+
+
+// -----------------------------------------------
+const myFunction3 = (r) => {
+    console.log(r);
+}
+// Affiche 'fonction flechée'
+myFunction3('fonction flechée')
+
+const calcul = (nb1, nb2) => {
+    // console.log(nb1 + nb2);
+    // ou
+    return nb1 + nb2;
+}
+// Affiche le résultat du calcul 4 + 5 donc 9
+// calcul(4, 5);
+// ou
+console.log(calcul(4, 5));
+
+
+// INTERAGIR AVEC LE DOM // METHODE, PROPRIETE, EVENEMENT
+
+
+
+// Selectors
+
+// document.querySelector;
+// document.querySelectorAll;
+// document.getElementById;
+// document.getElementsByClassName;
+// document.getElementsByTagName;
+
+
+// PORTFOLIO ---------------------------------------------------------

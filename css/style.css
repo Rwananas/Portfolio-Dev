@@ -212,6 +212,10 @@ a:hover {
   transform: translateY(-7px);
 }
 
+@media screen and (max-width: 749px) {
+  display: flex;
+}
+
 @media screen and (min-width: 750px) {
   .navbar {
     display: flex;
