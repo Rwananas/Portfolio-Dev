@@ -1,16 +1,22 @@
+// VARIABLES ET CONSTANTE
+
 let myVar = "ma variable";
 const myVar2 = "ma  variable 2";
 console.log(myVar);
 
 myVar = "ma variable changée"
 
-// boolean
+
+// BOOLEEN
+
 let isTrue = true;
 let isFalse = false;
 
 console.log(isFalse);
 
-// chiffres et opérateurs
+
+// CHIFFRES ET OPERATEURS
+
 let chiffre1 = 4;
 let chiffre2 = 3;
 let chiffre3 = '3';
@@ -25,7 +31,8 @@ let test2 = `test ${myVar}`;
 console.log(test);
 console.log(test2);
 
-// conditions IF /IF ELSE
+
+// CONDITIONS IF /IF ELSE
 
 if (chiffre1 > chiffre2) {
     console.log('condition valide');
@@ -42,7 +49,8 @@ if (chiffre1 <= 3) {
     console.log('condition différente');
 }
 
-// tableaux ARRAY
+
+// TABLEAU ARRAY
 
 let array = ['item 1', 'item 2', 'item 3', 'item 4'];
 console.log(array[0]);
@@ -52,7 +60,8 @@ array = ['item 1', 'item 2', 'item 3', 'item 4'];
 console.log(array.length);
 // affiche 4, car il y a 4 données dans le tableau (ARRAY)
 
-// Objets
+
+// OBJETS
 
 let obj = {
     title: 'mon titre',
@@ -61,4 +70,9 @@ let obj = {
 console.log(obj.title, obj.description);
 // affiche mon titre ma description 
 
+
 // LES BOUCLES, WHILE, FOR, FOREACH
+
+for (let i = 0; i < 5; i++) {
+    console.log('toto');
+}
