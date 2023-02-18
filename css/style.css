@@ -447,6 +447,10 @@ a:hover {
     margin-bottom: 0;
   }
 
+  .portfolio .grid__item.hide {
+    display: none;
+  }
+
   .portfolio-filters .grid__item {
     max-width: 50%;
     margin-bottom: 0;
@@ -569,6 +573,8 @@ a:hover {
 
   footer .grid {
     align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   footer .socials {
@@ -602,11 +608,18 @@ a:hover {
     footer {
       text-align: left;
     }
+    footer .grid {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    footer .grid__item {
+      max-width: 33.3333%;
+    }
   }
-
-  footer .grid__item {
-    max-width: 33.3333%;
-  }
+  
+  
 
   /* KEYFRAMES */
 
