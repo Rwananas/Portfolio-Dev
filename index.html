@@ -20,7 +20,6 @@
     <!-- MON CSS  -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
-    
   </head>
   <body>
     <header class="header">
@@ -48,7 +47,9 @@
               /></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/erwann-bruneteau-65ba04233/" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/erwann-bruneteau-65ba04233/"
+                target="_blank"
                 ><img
                   class="icon linkedin"
                   src="img/linkedin.svg"
@@ -64,7 +65,9 @@
               /></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/rwananas/?hl=fr" target="_blank"
+              <a
+                href="https://www.instagram.com/rwananas/?hl=fr"
+                target="_blank"
                 ><img
                   class="icon instagram"
                   src="img/instagram.svg"
@@ -373,7 +376,49 @@
                 <p class="category">Développement Web</p>
               </div>
               <div class="card__overlay">
-                <a href="">+</a>
+                <a href="#" class="card__link" data-id="modal-1">+</a>
+              </div>
+            </div>
+            <div class="modal" id="modal-1">
+              <button class="modal__close">&times;</button>
+
+              <div class="modal__content">
+                <div class="container">
+                  <div class="grid">
+                    <div class="grid__item">
+                      <img
+                src="https://picsum.photos/600/400?random=12"
+                alt="projet de ville"
+                class="card__image"
+              />
+              <img
+                src="https://picsum.photos/600/400?random=13"
+                alt="projet de ville"
+                class="card__image"
+              />
+                    </div>
+                    <div class="grid__item">
+                      <h4 class="modal__title h2">Titre de la modal ${id}</h4>
+                      <p>
+                        <img src="img/calendrier.svg" width="15" height="15" alt="logo calendrier">
+                        <i>Année : 2022</i>
+                      </p>
+                      <p class="category">
+                        <img src="img/etiquette-de-prix.svg" width="15" height="15" alt="logo calendrier">
+                        Refonte graphique
+                      </p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae et sunt qui rerum ducimus, voluptate magnam ratione cumque pariatur sit.</p>
+
+                      <h5 class="h3">Technologies</h5>
+
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -389,8 +434,12 @@
                 <p class="category">Refonte graphique</p>
               </div>
               <div class="card__overlay">
-                <a href="">+</a>
+                <a href="#" class="card__link" data-id="modal-2">+</a>
               </div>
+            </div>
+            <div class="modal" id="modal-2">
+              <button class="modal__close">&times;</button>
+              <h4>Modal 2</h4>
             </div>
           </div>
           <div class="grid__item">
@@ -405,7 +454,7 @@
                 <p class="category">Applications</p>
               </div>
               <div class="card__overlay">
-                <a href="">+</a>
+                <a href="#" class="card__link">+</a>
               </div>
             </div>
           </div>
@@ -421,7 +470,7 @@
                 <p class="category">Développement Web</p>
               </div>
               <div class="card__overlay">
-                <a href="">+</a>
+                <a href="#" class="card__link">+</a>
               </div>
             </div>
           </div>
@@ -437,7 +486,7 @@
                 <p class="category">Refonte graphique</p>
               </div>
               <div class="card__overlay">
-                <a href="">+</a>
+                <a href="#" class="card__link">+</a>
               </div>
             </div>
           </div>
@@ -453,7 +502,7 @@
                 <p class="category">Applications</p>
               </div>
               <div class="card__overlay">
-                <a href="">+</a>
+                <a href="#" class="card__link">+</a>
               </div>
             </div>
           </div>
@@ -511,22 +560,34 @@
             <ul class="socials list-unstyled">
               <li>
                 <a href="" target="_blank"
-                  ><img class="icon github" src="img/github.svg" alt="logo github"
+                  ><img
+                    class="icon github"
+                    src="img/github.svg"
+                    alt="logo github"
                 /></a>
               </li>
               <li>
                 <a href="" target="_blank"
-                  ><img class="icon linkedin" src="img/linkedin.svg" alt="logo linkedin"
+                  ><img
+                    class="icon linkedin"
+                    src="img/linkedin.svg"
+                    alt="logo linkedin"
                 /></a>
               </li>
               <li>
                 <a href="" target="_blank"
-                  ><img class="icon twitter" src="img/twitter.svg" alt="logo twitter"
+                  ><img
+                    class="icon twitter"
+                    src="img/twitter.svg"
+                    alt="logo twitter"
                 /></a>
               </li>
               <li>
                 <a href="" target="_blank"
-                  ><img class="icon instagram" src="img/instagram.svg" alt="logo instagram"
+                  ><img
+                    class="icon instagram"
+                    src="img/instagram.svg"
+                    alt="logo instagram"
                 /></a>
               </li>
             </ul>
