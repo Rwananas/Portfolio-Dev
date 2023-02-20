@@ -325,6 +325,10 @@ a:hover {
   animation-name: slideinright;
 }
 
+.hero__avatar img {
+  width: 100%;
+}
+
 @media screen and (max-width: 749px) {
   .hero__item.left {
     order: 2;
@@ -535,16 +539,6 @@ a:hover {
   transition: all 1s ease;
 }
 
-@media screen and (min-width: 750px) {
-  .modal .grid__item {
-    max-width: 50%;
-  }
-
-  .modal__content {
-    padding: 3rem;
-  }
-}
-
 @media screen and (max-width: 749px) {
   .portfolio a {
     font-size: 1.4rem;
@@ -557,6 +551,10 @@ a:hover {
   }
   .portfolio-filters .grid__item {
     max-width: 25%;
+  }
+
+  .modal__content {
+    padding: 3rem;
   }
   
   .modal .grid__item {
