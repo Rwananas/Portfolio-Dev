@@ -1,0 +1,16 @@
+.blog {
+
+}
+
+@media screen  and (max-width: 749px) {
+    .blog h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 749px) {
+}
+
+@media screen and (min-width: 750px) {
+    
+}
