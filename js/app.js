@@ -133,7 +133,7 @@ console.log(calcul(4, 5));
 // document.getElementsByTagName;
 
 
-// PORTFOLIO ---------------------------------------------------------
+//----- JS du PORTFOLIO ---------------------------------------------------------
 // Menu mobile 
 function menuMobile() {
     const btn = document.querySelector('.burger');
